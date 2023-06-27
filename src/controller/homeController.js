@@ -49,11 +49,20 @@ let updateUser = async (req, res) => {
     return res.redirect('/')
 }
 
+let getUploadFilePage = (req, res) => {
+    return res.render('uploadFile.ejs')
+}
+
+let handleUploadFile = (req, res) => {
+
+}
+
 module.exports = {
     getHomepage,
     getDetailPage,
     createNewUser,
     deleteUser,
     getEditPage,
-    updateUser
+    updateUser,
+    getUploadFilePage
 }
